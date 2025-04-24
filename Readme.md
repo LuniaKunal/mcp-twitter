@@ -33,7 +33,7 @@ Welcome to the Twitter MCP (Multi-Channel Platform) Server! This application hel
 
 To start the server, run:
 ```bash
-uv run --with twikit --with mcp E:/Agents/mcp-twitter/src/tweet_service.py
+uv run --with twikit --with mcp Path\\src\\tweet_service.py
 ```
 
 ```
