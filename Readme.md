@@ -12,6 +12,8 @@ Welcome to the Twitter MCP (Multi-Channel Platform) Server! This application hel
 - **Delete Post:** Delete your tweets through the API.
 - **And much more...**
 
+![Twitter MCP Server](image.png)
+
 ## Getting Started
 
 ### Prerequisites
