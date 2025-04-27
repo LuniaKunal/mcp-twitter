@@ -1,0 +1,23 @@
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - twitterUsername
+      - twitterEmail
+      - twitterPassword
+    properties:
+      twitterUsername:
+        type: string
+        description: Your Twitter username.
+      twitterEmail:
+        type: string
+        description: Your Twitter email.
+      twitterPassword:
+        type: string
+        description: Your Twitter password.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'mcp-twikit', env: { TWITTER_USERNAME: config.twitterUsername, TWITTER_EMAIL: config.twitterEmail, TWITTER_PASSWORD: config.twitterPassword } })
