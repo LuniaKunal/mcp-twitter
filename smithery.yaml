@@ -17,7 +17,13 @@ startCommand:
       twitterPassword:
         type: string
         description: Your Twitter password.
-  commandFunction:
-    # A function that produces the CLI command to start the MCP on stdio.
-    |-
-    (config) => ({ command: 'twitter-mcp', env: { TWITTER_USERNAME: config.twitterUsername, TWITTER_EMAIL: config.twitterEmail, TWITTER_PASSWORD: config.twitterPassword } })
+  commandFunction: |
+    (config) => ({
+      "command": "python",
+      "args": ["/app/src/tweet_service.py"],
+      "env": {
+        "TWITTER_USERNAME": config.twitterUsername,
+        "TWITTER_EMAIL": config.twitterEmail,
+        "TWITTER_PASSWORD": config.twitterPassword
+      }
+    })
