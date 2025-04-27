@@ -20,4 +20,4 @@ startCommand:
   commandFunction:
     # A function that produces the CLI command to start the MCP on stdio.
     |-
-    (config) => ({ command: 'mcp-twikit', env: { TWITTER_USERNAME: config.twitterUsername, TWITTER_EMAIL: config.twitterEmail, TWITTER_PASSWORD: config.twitterPassword } })
+    (config) => ({ command: 'twitter-mcp', env: { TWITTER_USERNAME: config.twitterUsername, TWITTER_EMAIL: config.twitterEmail, TWITTER_PASSWORD: config.twitterPassword } })
