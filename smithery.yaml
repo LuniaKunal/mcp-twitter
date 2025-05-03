@@ -1,22 +1,22 @@
+configSchema:
+  type: object
+  required:
+    - twitterUsername
+    - twitterEmail
+    - twitterPassword
+  properties:
+    twitterUsername:
+      type: string
+      description: Your Twitter username.
+    twitterEmail:
+      type: string
+      description: Your Twitter email.
+    twitterPassword:
+      type: string
+      description: Your Twitter password.
+
 startCommand:
   type: stdio
-  configSchema:
-    # JSON Schema defining the configuration options for the MCP.
-    type: object
-    required:
-      - twitterUsername
-      - twitterEmail
-      - twitterPassword
-    properties:
-      twitterUsername:
-        type: string
-        description: Your Twitter username.
-      twitterEmail:
-        type: string
-        description: Your Twitter email.
-      twitterPassword:
-        type: string
-        description: Your Twitter password.
   commandFunction: |
     (config) => ({
       "command": "python",
