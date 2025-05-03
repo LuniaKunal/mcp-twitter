@@ -12,12 +12,15 @@ Welcome to the Twitter MCP (Multi-Channel Platform) Server! This application hel
 - **Delete Post:** Delete your tweets through the API.
 - **And much more...**
 
+
+[![Twitter MCP Server](https://github.com/user-attachments/assets/1a05ab8f-75b3-4fec-b91d-402f65d41544)](https://smithery.ai/server/@LuniaKunal/mcp-twitter)
+
 ![Twitter MCP Server](image.png)
 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.11+
 - [uvicorn](https://www.uvicorn.org/) (for running the server)
 - Twitter API credentials (set in `.env` file)
 
